@@ -1,0 +1,45 @@
+{
+  "name": "container",
+  "subdomain": "packages/",
+  "dev": {
+    "mode": "development",
+    "host": "http://localhost",
+    "port": 15000
+  },
+  "prod": {
+    "mode": "production",
+    "folder": "container/dist/",
+    "host": "http://localhost",
+    "port": 16000
+  },
+  "exposes": {},
+  "microapps": [
+    {
+      "name": "auth",
+      "folder": "auth/dist/",
+      "filename": "remoteEntry.js",
+      "dev": {
+        "host": "http://localhost",
+        "port": 15001
+      }
+    },
+    {
+      "name": "home",
+      "folder": "home/dist/",
+      "filename": "remoteEntry.js",
+      "dev": {
+        "host": "http://localhost",
+        "port": 15002
+      }
+    },
+    {
+      "name": "customers",
+      "folder": "customers/dist/",
+      "filename": "remoteEntry.js",
+      "dev": {
+        "host": "http://localhost",
+        "port": 15003
+      }
+    }
+  ]
+}

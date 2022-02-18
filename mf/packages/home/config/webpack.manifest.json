@@ -1,0 +1,18 @@
+{
+  "name": "home",
+  "filename": "remoteEntry.js",
+  "subdomain": "packages/",
+  "dev": {
+    "mode": "development",
+    "host": "http://localhost",
+    "port": 15002
+  },
+  "prod": {
+    "mode": "production",
+    "folder": "home/dist/"
+  },
+  "entry": {
+    "appname": "HomeApp",
+    "filename": "./src/bootstrap"
+  }
+}
